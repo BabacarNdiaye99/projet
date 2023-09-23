@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter medicament</title>
+</head>
+<body>
+    <form method="POST" action="addMed.php" enctype="multipart/form-data">
+        <label for="pr">saisir le nom du medicament</label>
+        <input type="text" name="name" id="pr" required> <br><br>
+        <label for="no">saisir le notice du medicament</label>
+        <input type="text" name="notice" id="not" required><br><br>
+        <label for="qt">saisir le quantite du medicament disponible</label>
+        <input type="number" name="qte" id="qt" required><br><br>
+        <label for="prx">saisir le prix du medicament</label>
+        <input type="float" name="prix" id="prx" required><br><br>
+        <label for="pt">Ajouter le photo de ce medicament</label>
+        <input type="file" name="photo" id="pt" required><br><br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
