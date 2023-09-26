@@ -8,7 +8,10 @@ $data=mysqli_fetch_array($result);
 //echo $data[0];
 if($data[0]==1)
 {
-    echo "Vous etes autorisee a faire des modifications";
+
+    echo '<p> si vous voulez vérifier la Liste des commandes tapez <a href="allcommande.php">ici</a> pour retourner</p>';
+    echo '<p> si vous voulez supprimer un medicament tapez <a href="delMed.html">ici</a> pour retourner</p>';
+    echo '<p> si vous voulez modifier des donnees  d\'un medicament tapez <a href="update.html">ici</a> pour retourner</p>';
     
 
 }

@@ -8,6 +8,8 @@ $num=$_POST['numero'];
 $id=$_POST['identite'];
 $quantite=$_POST['Qte_cde'];
 $disponible=$_POST['Qte_dispo'];
+$ordre=$_POST['ordre'];
+//echo $ordre;
 if($quantite<$disponible){
     //echo $med.'<br>';
 //echo $prix.'<br>';
@@ -18,6 +20,10 @@ if($quantite<$disponible){
 //echo $quantite.'<br>';
 $query="INSERT INTO commande(prenom,nom,Num_cni,Num_tel,Nom_med,prix,quantite) values('$prenom','$nom','$id',$num,'$med',$prix,$quantite)";
 $result=mysqli_query($connect,$query);
+$update="UPDATE medicament
+SET Qte_st=$disponible-$quantite 
+WHERE Qr_med=$ordre";
+$envoi=mysqli_query($connect,$update);
 echo '<p> votre demande est bien prise en compte <a href="allMed.php">ici</a> pour retourner</p>';
 
 

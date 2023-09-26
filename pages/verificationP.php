@@ -8,7 +8,9 @@ $data=mysqli_fetch_array($result);
 //echo $data[0];
 if($data[0]==1)
 {
-    echo "Vous etes connecter en tant que pharmacien";
+    echo '<p> si vous voulez ajouter un medicament tapez <a href="ajouterMed.html">ici</a> pour retourner</p>';
+    echo '<p> si vous voulez vérifier la Liste des Médicaments Précommandés tapez <a href="precommander.php">ici</a> pour retourner</p>';
+   
     
 
 }

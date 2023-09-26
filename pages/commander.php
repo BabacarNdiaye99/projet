@@ -19,6 +19,10 @@ $medicaments = mysqli_fetch_array($result);
 
     <label for="pr">Le prix du médicament est :</label>
     <input type="text" name="prix_medicament" id="pr" value="<?php echo $medicaments[4]; ?>"readonly><br><br>
+
+    <label for="or">Le numéro du medicamment :</label>
+    <input type="number" name="ordre" id="or" value="<?php echo $medicaments[0]; ?>"readonly><br><br>
+    
     <label for="dispo">La quantite du medicament disponible :</label>
     <input type="number" name="Qte_dispo" id="dispo" value="<?php echo $medicaments[3]; ?>"readonly><br><br>
 
